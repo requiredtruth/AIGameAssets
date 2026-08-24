@@ -1,0 +1,42 @@
+name: Funded development direction
+description: Attribute a confirmed donation and request a specific area for more work.
+title: "[funded direction] "
+labels: ["funded-direction"]
+body:
+  - type: dropdown
+    id: asset
+    attributes:
+      label: Asset
+      options: [Bitcoin, Ethereum / EVM, Dogecoin]
+    validations:
+      required: true
+  - type: input
+    id: network
+    attributes:
+      label: Network
+      description: Name the exact network used for the transaction.
+    validations:
+      required: true
+  - type: input
+    id: transaction
+    attributes:
+      label: Public transaction hash
+      description: Never provide a private key, seed phrase, signature, or other secret.
+    validations:
+      required: true
+  - type: textarea
+    id: direction
+    attributes:
+      label: Requested development direction
+      description: Describe the specific feature, test, documentation area, or project direction you want expanded.
+    validations:
+      required: true
+  - type: checkboxes
+    id: acknowledgement
+    attributes:
+      label: Acknowledgements
+      options:
+        - label: I understand the first issue claiming an unclaimed confirmed inbound hash receives operational attribution, not cryptographic proof of wallet ownership.
+          required: true
+        - label: I understand a donation does not purchase ownership, returns, a deadline, or unsafe, illegal, proprietary, or out-of-scope work.
+          required: true
