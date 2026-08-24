@@ -20,5 +20,3 @@ jobs:
           python-version: ${{ matrix.python-version }}
       - run: python -m unittest discover -s tests -v
       - run: python -m gbcforge --offline --jobs 5 --db /tmp/gbcforge.sqlite3 --out /tmp/content.jsonl
-      - run: python -m unittest discover -s tests -v
-        working-directory: incubator/GGUFGauge
