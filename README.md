@@ -102,3 +102,12 @@ Donations increase the amount of RequiredTruth development that can be produced.
 After a confirmed donation, a donor may open an issue with the asset, network, public transaction hash, and the specific feature or direction they want expanded. The first issue claiming an unclaimed confirmed inbound hash receives its operational request attribution. Never post a private key or seed phrase.
 
 Apache-2.0 licensed.
+
+
+## Install and run
+
+```sh
+chmod +x install.sh run.sh
+./install.sh
+./run.sh --help
+```
